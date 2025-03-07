@@ -52,7 +52,7 @@ const Home = () => {
         <nav className="absolute top-0 left-0 w-full flex justify-between items-center p-4 md:px-10 text-teal-900">
           <div className="text-2xl font-bold">Islamic Date Today</div>
           <div className="flex gap-10 md:pr-20">
-            <a href="https://thetravelsofzee.com" target='_blank' className="hover:text-gray-700 font-bold md:p-2 hover:shadow-xl">About Us</a>
+            <a href="https://portfolio-mumairamjad.vercel.app/" target='_blank' className="hover:text-gray-700 font-bold md:p-2 hover:shadow-xl">About Us</a>
           </div>
         </nav>
 
