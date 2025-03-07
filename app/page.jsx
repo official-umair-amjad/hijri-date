@@ -5,6 +5,7 @@ import Cookies from 'js-cookie';
 import HijriDate from '../components/HijriDate';
 import SignupForm from '../components/SignupForm';
 import Footer from '../components/Footer';
+import {IoLocationOutline} from 'react-icons/io5'
 
 const Home = () => {
   // Retrieve user location from cookies; default to 'Saudi Arabia'
@@ -64,10 +65,14 @@ const Home = () => {
         <div>
           <HijriDate location={location} />
         </div>
+        <div className='px-2 flex gap-1 drop-shadow text-lg font-bold items-center text-teal-900 rounded-full'>
+          <IoLocationOutline/>
+          <p>{city} | {location}</p>
+        </div>
         <div className="absolute md:bottom-18 bottom-50 md:w-2/5 text-sm">
           <SignupForm location={location} />
         </div>
-        <Footer />
+{/*         <Footer /> */}
       </main>
     </>
   );
